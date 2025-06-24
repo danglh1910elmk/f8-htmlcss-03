@@ -88,6 +88,11 @@ button {
     background: transparent;
 }
 
+button,
+input {
+    font-family: inherit;
+}
+
 /*!  */
 .header {
     min-height: 100vh;
@@ -723,10 +728,132 @@ button {
 }
 
 .appointment__desc {
-    width: 617px;
+    width: 620px;
     margin: 38px auto;
     font-size: 1.6rem;
+    font-weight: 300;
     line-height: 1.75;
 }
 
 /* ================= footer ================= */
+.footer {
+    margin-top: 170px;
+    padding: 100px 0 42px;
+    background: #10375c;
+    font-family: "Open Sans", sans-serif;
+}
+
+.footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__desc {
+    margin-top: 21px;
+    max-width: 336px;
+    color: #a9b3bb;
+    font-size: 1.6rem;
+    line-height: 1.75;
+}
+
+.footer__heading {
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75;
+    margin-bottom: 20px;
+}
+
+.footer__heading:nth-child(n + 2) {
+    margin-top: 28px;
+}
+
+.footer__item {
+    margin-top: 10px;
+}
+
+.footer__item:hover .footer__link {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.footer__link {
+    color: #a9b3bb;
+    font-size: 1.4rem;
+    line-height: 1.86;
+}
+
+.footer__social-wrapper {
+    display: flex;
+    column-gap: 10px;
+}
+
+.footer__social-link {
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease;
+}
+
+.footer__social-link:hover {
+    background: #2e80ce;
+}
+
+.footer__social-link:hover svg path {
+    fill: #fff;
+    transition: 0.3s ease;
+}
+
+.footer__sub-desc {
+    width: 273px;
+    color: #a9b3bb;
+    font-size: 1.4rem;
+    line-height: 1.86;
+}
+
+/* ===== form ===== */
+.footer__form {
+    margin-top: 10px;
+}
+
+.footer__input {
+    max-width: 212px;
+    height: 46px;
+    padding: 10px;
+    background: transparent;
+    border-radius: 4px;
+    border: 1px solid #406181;
+    outline: none;
+}
+
+.footer__input::placeholder {
+    color: #9ca8b1;
+    font-size: 1.4rem;
+    line-height: 1.86;
+}
+
+.footer__submit {
+    margin-left: 12px;
+    width: 108px;
+    height: 46px;
+    border-radius: 4px;
+    background: #2e80ce;
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.86;
+}
+
+/* copyright  */
+.footer__copyright {
+    margin-top: 28px;
+    color: #aab3ba;
+    text-align: center;
+    font-size: 1.4rem;
+    padding-top: 28px;
+    border-top: 1px solid #406181;
+}
