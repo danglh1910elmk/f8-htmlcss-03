@@ -60,6 +60,7 @@ button {
     padding: 0;
     cursor: pointer;
     font-family: "Sora";
+    background: transparent;
 }
 
 /*!  */
@@ -457,4 +458,104 @@ button {
 
 .denture-solution__cta {
     margin-top: 38px;
+}
+
+/* ================= dentists section ================= */
+.dentists {
+    margin-bottom: 170px;
+}
+
+.dentists__heading {
+    text-align: center;
+}
+
+.dentists__btn {
+    display: flex;
+    width: 205px;
+    margin: 38px auto 0;
+}
+
+.dentists__list {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dentist-card {
+    width: 270px;
+    overflow: hidden;
+}
+
+.dentist-card:hover .dentist-card__photo {
+    transform: scale(1.1);
+}
+
+.dentist-card__img-wrapper {
+    height: 318px;
+    border-radius: 6px;
+    background: #eaf6ff;
+    position: relative;
+}
+
+.dentist-card__photo {
+    /* width: 100%; */
+    object-fit: cover;
+    position: absolute;
+    bottom: 0;
+    transition: 0.5s ease;
+}
+
+.dentist-card__body {
+    padding: 12px 14px 0;
+}
+
+.dentist-card__name {
+    color: #10375c;
+    text-align: center;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.dentist-card__university {
+    color: #575f66;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1.86;
+    /* truncate if text is too long  */
+    display: -webkit-box;
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.dentists__control {
+    margin-top: 38px;
+    display: flex;
+    justify-content: center;
+    column-gap: 18px;
+}
+
+.control__btn {
+    width: 36px;
+    height: 36px;
+    border: 1px solid #575f66;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease;
+}
+
+.control__btn:hover {
+    border-color: #2e80ce;
+    background: #2e80ce;
+}
+
+.control__btn:hover svg path {
+    stroke: #fff;
 }
