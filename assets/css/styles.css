@@ -509,7 +509,6 @@ input {
 
 .dentist-card {
     width: 270px;
-    overflow: hidden;
 }
 
 .dentist-card:hover .dentist-card__photo {
@@ -520,6 +519,7 @@ input {
     height: 318px;
     border-radius: 6px;
     background: #eaf6ff;
+    overflow: hidden;
     position: relative;
 }
 
@@ -540,6 +540,7 @@ input {
     text-align: center;
     font-size: 1.6rem;
     line-height: 1.75;
+    /* truncate if text is too long  */
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -639,7 +640,6 @@ input {
 .news-card {
     width: 270px;
     border-radius: 12px;
-    border: 1px solid #e8ebee;
     background: #fff;
     transition: 0.5s ease;
     overflow: hidden;
@@ -671,6 +671,9 @@ input {
 
 .news-card__body {
     padding: 18px 22px 22px;
+    border: 1px solid #e8ebee;
+    border-top: none;
+    border-radius: 0 0 12px 12px;
 }
 
 .news-card__heading {
@@ -678,6 +681,12 @@ input {
     font-size: 1.6rem;
     font-weight: 600;
     line-height: 1.63;
+    /* truncate if text is too long  */
+    display: -webkit-box;
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .news-card__desc {
@@ -686,6 +695,12 @@ input {
     font-size: 1.4rem;
     font-weight: 300;
     line-height: 1.71;
+    /* truncate if text is too long  */
+    display: -webkit-box;
+    line-clamp: 3;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .news-card__link {
