@@ -51,6 +51,31 @@ body {
     opacity: 0.8;
 }
 
+.control {
+    display: flex;
+    column-gap: 18px;
+}
+
+.control__btn {
+    width: 36px;
+    height: 36px;
+    border: 1px solid #575f66;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease;
+}
+
+.control__btn:hover {
+    border-color: #2e80ce;
+    background: #2e80ce;
+}
+
+.control__btn:hover svg path {
+    stroke: #fff;
+}
+
 a {
     text-decoration: none;
 }
@@ -531,29 +556,7 @@ button {
 
 .dentists__control {
     margin-top: 38px;
-    display: flex;
     justify-content: center;
-    column-gap: 18px;
-}
-
-.control__btn {
-    width: 36px;
-    height: 36px;
-    border: 1px solid #575f66;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.5s ease;
-}
-
-.control__btn:hover {
-    border-color: #2e80ce;
-    background: #2e80ce;
-}
-
-.control__btn:hover svg path {
-    stroke: #fff;
 }
 
 /* ================= denture-promo section ================= */
@@ -591,3 +594,139 @@ button {
 .denture-promo__download-link {
     margin-right: 28px;
 }
+
+/* ================= news section ================= */
+.news {
+    margin-top: 170px;
+}
+
+.news__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.news__left {
+    width: 40.2%;
+}
+
+.news__link {
+    display: block;
+    margin: 28px 0;
+    color: #10375c;
+    font-family: Inter;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.56;
+}
+
+.news__right {
+    width: 49%;
+}
+
+.news__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.news-card {
+    width: 270px;
+    border-radius: 12px;
+    border: 1px solid #e8ebee;
+    background: #fff;
+    transition: 0.5s ease;
+    overflow: hidden;
+}
+
+.news-card:hover {
+    box-shadow: 0px 18px 50px 0px rgba(0, 0, 0, 0.05);
+}
+
+.news-card__img-wrapper {
+    overflow: hidden;
+}
+
+.news-card__img {
+    width: 100%;
+    height: 172px;
+    object-fit: cover;
+    border-radius: 12px 12px 0px 0px;
+    transition: 0.3s ease;
+
+    display: block; /* this removes tiny gap between img and body */
+    /* or use this instead
+    vertical-align: baseline; */
+}
+
+.news-card:hover .news-card__img {
+    transform: scale(1.1);
+}
+
+.news-card__body {
+    padding: 18px 22px 22px;
+}
+
+.news-card__heading {
+    color: #10375c;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.63;
+}
+
+.news-card__desc {
+    margin-top: 10px;
+    color: #575f66;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1.71;
+}
+
+.news-card__link {
+    display: inline-block;
+    margin-top: 12px;
+    color: #10375c;
+    font-size: 1.4rem;
+    transition: 0.3s ease;
+}
+
+.news-card__link:hover {
+    color: #2e80ce;
+}
+
+/* ================= news section ================= */
+.appointment {
+    margin-top: 170px;
+}
+
+.appointment__container {
+    padding: 100px 0;
+    background: #f6fbff;
+    text-align: center;
+}
+
+.appointment__heading {
+    position: relative;
+}
+
+.appointment__heading::after {
+    content: "";
+    display: block;
+    width: 136px;
+    height: 2px;
+    background: #2e80ce;
+    position: absolute;
+    bottom: -18px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.appointment__desc {
+    width: 617px;
+    margin: 38px auto;
+    font-size: 1.6rem;
+    line-height: 1.75;
+}
+
+/* ================= footer ================= */
