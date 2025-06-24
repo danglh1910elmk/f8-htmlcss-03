@@ -409,3 +409,52 @@ button {
 .how-it-works__item:hover .how-it-works__item-link {
     color: #2e80ce;
 }
+
+/* ================= denture-solution section ================= */
+.denture-solution {
+    margin: 170px 0;
+}
+
+.denture-solution__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.denture-solution__left {
+    width: 48.8%;
+    height: 491px;
+    position: relative;
+}
+
+.denture-solution__img {
+    object-fit: cover;
+    object-position: center;
+    border-radius: 6px;
+}
+
+.denture-solution__img--primary {
+    width: 512px;
+    height: 370px;
+    box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.07);
+}
+
+.denture-solution__img--secondary {
+    width: 332px;
+    height: 370px;
+    position: absolute;
+    top: 121px;
+    right: 0;
+}
+
+.denture-solution__right {
+    width: 40.2%;
+}
+
+.denture-solution__desc {
+    margin-top: 18px;
+}
+
+.denture-solution__cta {
+    margin-top: 38px;
+}
